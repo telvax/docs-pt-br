@@ -11,3 +11,7 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 ## Status
 
 No file is translated yet. To start, open an issue naming the file you will take.
+
+## License
+
+Dual-licensed under MIT (`LICENSE-MIT`) or Apache 2.0 (`LICENSE-APACHE`), at your option.
