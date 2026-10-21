@@ -15,6 +15,7 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 | `docs/guide/tour.md` | translated from `telvax/telvax@1c88355` |
 | `docs/guide/use-cases.md` | translated from `telvax/telvax@664d389` |
 | `README.md` of telvax/telvax | translated in `docs/README.md` from `telvax/telvax@2253a54` |
+| `site/src/content/docs/index.mdx` of telvax/telvax | translated in `docs/site/index.mdx` from `telvax/telvax@8c48c8b`; it is the home page of this language on the documentation site |
 
 To take a file, open an issue naming it.
 
