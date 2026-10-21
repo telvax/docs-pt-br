@@ -14,7 +14,7 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 |---|---|
 | `docs/guide/tour.md` | translated from `telvax/telvax@7f400a6` |
 | `docs/guide/use-cases.md` | translated from `telvax/telvax@664d389` |
-| `README.md` | not translated yet |
+| `README.md` of telvax/telvax | translated in `docs/README.md` from `telvax/telvax@2253a54` |
 
 To take a file, open an issue naming it.
 
