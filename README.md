@@ -10,7 +10,13 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 
 ## Status
 
-No file is translated yet. To start, open an issue naming the file you will take.
+| File | State |
+|---|---|
+| `docs/guide/tour.md` | translated from `telvax/telvax@7f400a6` |
+| `docs/guide/use-cases.md` | not translated yet |
+| `README.md` | not translated yet |
+
+To take a file, open an issue naming it.
 
 ## License
 
