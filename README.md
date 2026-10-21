@@ -13,7 +13,7 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 | File | State |
 |---|---|
 | `docs/guide/tour.md` | translated from `telvax/telvax@7f400a6` |
-| `docs/guide/use-cases.md` | not translated yet |
+| `docs/guide/use-cases.md` | translated from `telvax/telvax@664d389` |
 | `README.md` | not translated yet |
 
 To take a file, open an issue naming it.
