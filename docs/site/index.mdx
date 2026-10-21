@@ -1,0 +1,75 @@
+---
+title: Telvax
+description: "Traduzido de telvax/telvax@8c48c8b (site/src/content/docs/index.mdx). Uma linguagem compilada e estaticamente tipada para dados, pipelines de ML e serviços de IA."
+template: splash
+hero:
+  tagline: Uma linguagem compilada e estaticamente tipada para processamento de dados, pipelines de ML e serviços de IA. Fácil de ler para quem conhece Python. Alfa inicial.
+  actions:
+    - text: Um tour pelo Telvax
+      link: guide/tour/
+      icon: right-arrow
+    - text: Casos de uso
+      link: guide/use-cases/
+      variant: minimal
+    - text: GitHub
+      link: https://github.com/telvax/telvax
+      variant: minimal
+      icon: external
+---
+
+{/* Traduzido de telvax/telvax@8c48c8b3b9b968f5b1f1cd83926bf80c84f84ab1 (site/src/content/docs/index.mdx). */}
+
+```telvax
+import std.ai.embeddings.OllamaEmbedder
+import std.http.Status
+
+let embedder = OllamaEmbedder.new("nomic-embed-text")
+
+type QueryPayload:
+    query: Text
+    top_k: i32
+
+fn embed(text: Text) -> Tensor[f32, 768]:
+    text |> std.text.clean_whitespace() |> std.text.truncate(512) |> embedder.embed()
+
+@endpoint(POST, "/v1/embed")
+fn handle(payload: QueryPayload) -> Result[Tensor[f32, 768], Status]:
+    if payload.query.is_empty():
+        return Err(Status.BadRequest("empty query"))
+    Ok(embed(payload.query))
+```
+
+## Documentação
+
+| | |
+|---|---|
+| [Tutorial](guide/tour/) | Comece por aqui. Um tour pela linguagem, de `fn` e `let` até tensores, tabelas e `@endpoint`. |
+| [Referência da biblioteca](reference/std/) | Cada função, tipo e método da biblioteca padrão, com a sua assinatura. |
+| [Linha de comando](reference/cli/) | Cada comando `telvax` e as suas opções: `run`, `test`, `fmt`, `serve`, `build` e os demais. |
+| [Como fazer: casos de uso](guide/use-cases/) | Um programa para cada coisa para a qual o Telvax serve, com os comandos para rodá-lo. |
+| [Estabilidade da linguagem](guide/stability/) | O que permanece igual entre os releases: as edições e a sintaxe congelada. |
+| [Novidades](whats-new/) | As mudanças de cada release. |
+| [Sobre](about/contributing/) | Relatar problemas, contribuir, segurança, o código de conduta e as licenças. |
+
+## Instalar
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/telvax/telvax/main/scripts/install.sh | sh
+```
+
+Nada se abre quando termina: o Telvax é uma ferramenta de linha de comando, sem janela e sem app. O script coloca
+`telvax` e `tvpm` em `~/.telvax/bin` e, no macOS e no Linux, não altera o seu `PATH`, então adicione a pasta e confira:
+
+```sh
+export PATH="$HOME/.telvax/bin:$PATH"
+telvax --version
+```
+
+Se não houver binário para o seu sistema, o script compila a partir do código-fonte (precisa do [Rust](https://rustup.rs)).
+No Windows, use o PowerShell:
+
+```powershell
+irm https://raw.githubusercontent.com/telvax/telvax/main/scripts/install.ps1 | iex
+```
+
+Depois leia [o tutorial](guide/tour/).
