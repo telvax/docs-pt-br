@@ -1,0 +1,16 @@
+# Builds the documentation site of telvax/telvax with the pages of this repository and checks the links, so a page
+# that the site cannot convert fails here and not in the daily build of the `dev` site. The steps are in
+# telvax/workflows.
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    uses: telvax/workflows/.github/workflows/translation.yml@main
