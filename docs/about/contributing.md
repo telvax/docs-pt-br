@@ -95,7 +95,7 @@ falha sem a descrição, e `docs/reference/std.md` é escrito a partir dela com
 
 ## Lançamentos
 
-A `main` é lançada automaticamente **uma vez por semana** (segunda-feira, 12:00 UTC), e o **título** de cada pull request mesclado desde o último lançamento (um
+A `main` é lançada automaticamente **uma vez por semana** (segunda-feira, 07:00 UTC, 04:00 em Brasília), e o **título** de cada pull request mesclado desde o último lançamento (um
 [Conventional Commit](https://www.conventionalcommits.org)) escolhe a versão, então nenhum arquivo precisa ser
 editado. Um lançamento leva uma hora, e um lançamento leva todos os merges da semana: o título de **cada**
 commit desde a última tag conta, e vence o maior incremento (um `feat:` e depois um `fix:` é um lançamento
