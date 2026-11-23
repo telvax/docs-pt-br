@@ -21,6 +21,7 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 |---|---|
 | `docs/guide/tour.md` | translated from `telvax/telvax@1c88355` |
 | `docs/guide/use-cases.md` | translated from `telvax/telvax@664d389` |
+| `docs/guide/stability.md` | translated from `telvax/telvax@0524f5d` |
 | `CONTRIBUTING.md` of telvax/telvax | translated in `docs/about/contributing.md` from `telvax/telvax@1e3cb31` |
 | `SECURITY.md` of telvax/telvax | translated in `docs/about/security.md` from `telvax/telvax@2134c83` |
 | `CODE_OF_CONDUCT.md` of telvax/telvax | translated in `docs/about/code-of-conduct.md` from `telvax/telvax@2134c83`, based on the official translation of the Contributor Covenant 2.1 |
