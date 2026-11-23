@@ -21,6 +21,7 @@ Translation of the documentation in [telvax/telvax](https://github.com/telvax/te
 |---|---|
 | `docs/guide/tour.md` | translated from `telvax/telvax@1c88355` |
 | `docs/guide/use-cases.md` | translated from `telvax/telvax@664d389` |
+| `docs/reference/cli.md` | translated from `telvax/telvax@4c5a64d` |
 | `docs/guide/stability.md` | translated from `telvax/telvax@0524f5d` |
 | `CONTRIBUTING.md` of telvax/telvax | translated in `docs/about/contributing.md` from `telvax/telvax@1e3cb31` |
 | `SECURITY.md` of telvax/telvax | translated in `docs/about/security.md` from `telvax/telvax@2134c83` |
