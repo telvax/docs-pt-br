@@ -621,8 +621,8 @@ telvax serve app.tvx --live --allow net,env
 
 | Palavra | Permite |
 |---|---|
-| `fs.read` | `std.fs.read`, `std.fs.exists`, `read_csv`, `read_parquet`, `read_ipc` e as suas formas `_batches` |
-| `fs.write` | `std.fs.write`, `write_csv`, `write_parquet`, `write_ipc` |
+| `fs.read` | `std.fs.read`, `std.fs.exists`, `std.fs.list_dir`, `std.fs.walk`, `read_csv`, `read_parquet`, `read_ipc` e as suas formas `_batches` |
+| `fs.write` | `std.fs.write`, `std.fs.create_dir`, `std.fs.remove`, `write_csv`, `write_parquet`, `write_ipc` (`std.fs.copy` precisa de `fs.read` e `fs.write`) |
 | `fs` | `fs.read` e `fs.write` |
 | `env` | `std.env.get` |
 | `net` | os clientes Ollama, OpenAI e PostgreSQL, com `--live`, e `read_flight` / `write_flight` |
